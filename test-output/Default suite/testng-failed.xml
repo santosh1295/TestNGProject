@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="parameterization.Example1">
+      <class name="multiBrowserCheck.MultiBrowser">
         <methods>
-          <include name="Sum"/>
+          <include name="login"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
         </methods>
-      </class> <!-- parameterization.Example1 -->
+      </class> <!-- multiBrowserCheck.MultiBrowser -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -15,9 +15,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class MultiBrowser {
 	public WebDriver driver;
 
-	
-	@BeforeClass
 	@Parameters("browser")
+	@BeforeClass
 	public void beforeTest(String browser) {
 		if (browser.equalsIgnoreCase("firefox")) {
 			WebDriverManager.chromedriver().setup();
@@ -31,13 +30,14 @@ public class MultiBrowser {
 
 	@Test
 	
-	public void login() throws InterruptedException {
-		Thread.sleep(5000);
+	public void login()  {
+		
 		driver.findElement(By.name("q")).sendKeys("selenium");
 	}
 
 	@AfterClass
-	public void afterTest() {
+	public void afterTest() throws InterruptedException {
+		Thread.sleep(5000);
 		driver.quit();
 	}
 }
