@@ -9,15 +9,14 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">57</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">94</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">parameterization.Example1</td><td><a href="#m0">Sum</a></td><td rowspan="1">1682741677906</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">parameterization.Example1</td><td><a href="#m0">Sum</a></td><td rowspan="1">1697090485151</td><td rowspan="1">0</td></tr></tbody>
 </table>
 <h2>Default test</h2><h3 id="m0">parameterization.Example1#Sum</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Parameter &apos;val1&apos; is required by @Test on method Sum but has not been marked @Optional or defined
-in C:\Users\choug\AppData\Local\Temp\testng-eclipse-1412170638\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:267)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+Method Sum requires 5 parameters but 2 were supplied in the @Test annotation.
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:444)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:350)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:879)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:728)

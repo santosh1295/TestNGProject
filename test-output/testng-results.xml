@@ -2,24 +2,22 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-29T09:44:37 IST" name="Default suite" finished-at="2023-04-29T09:44:37 IST" duration-ms="57">
+  <suite started-at="2023-10-12T11:31:25 IST" name="Default suite" finished-at="2023-10-12T11:31:25 IST" duration-ms="94">
     <groups>
     </groups>
-    <test started-at="2023-04-29T09:44:37 IST" name="Default test" finished-at="2023-04-29T09:44:37 IST" duration-ms="57">
+    <test started-at="2023-10-12T11:31:25 IST" name="Default test" finished-at="2023-10-12T11:31:25 IST" duration-ms="94">
       <class name="parameterization.Example1">
-        <test-method signature="Sum(int,int)[pri:0, instance:parameterization.Example1@29215f06]" started-at="2023-04-29T09:44:37 IST" name="Sum" finished-at="2023-04-29T09:44:37 IST" duration-ms="0" status="FAIL">
+        <test-method signature="Sum(int,int,int,int,int)[pri:0, instance:parameterization.Example1@6cf0e0ba]" started-at="2023-10-12T11:31:25 IST" name="Sum" finished-at="2023-10-12T11:31:25 IST" duration-ms="0" status="FAIL">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
-Parameter 'val1' is required by @Test on method Sum but has not been marked @Optional or defined
-in C:\Users\choug\AppData\Local\Temp\testng-eclipse-1412170638\testng-customsuite.xml]]>
+Method Sum requires 5 parameters but 2 were supplied in the @Test annotation.]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
-Parameter 'val1' is required by @Test on method Sum but has not been marked @Optional or defined
-in C:\Users\choug\AppData\Local\Temp\testng-eclipse-1412170638\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:267)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+Method Sum requires 5 parameters but 2 were supplied in the @Test annotation.
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:444)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:350)
 at org.testng.internal.Parameters.createParameters(Parameters.java:684)
 at org.testng.internal.Parameters.handleParameters(Parameters.java:879)
 at org.testng.internal.Parameters.handleParameters(Parameters.java:728)

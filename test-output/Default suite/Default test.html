@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Apr 29 09:44:37 IST 2023</td>
+<td>Started on:</td><td>Thu Oct 12 11:31:25 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (57 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (94 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -78,10 +78,9 @@ function toggleAllBoxes() {
 <tr>
 <td title='parameterization.Example1.Sum()'><b>Sum</b><br>Test class: parameterization.Example1</td>
 <td><div><pre>org.testng.TestNGException: 
-Parameter &apos;val1&apos; is required by @Test on method Sum but has not been marked @Optional or defined
-in C:\Users\choug\AppData\Local\Temp\testng-eclipse-1412170638\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:267)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+Method Sum requires 5 parameters but 2 were supplied in the @Test annotation.
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:444)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:350)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:879)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
@@ -107,12 +106,11 @@ in C:\Users\choug\AppData\Local\Temp\testng-eclipse-1412170638\testng-customsuit
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace987249254", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace987249254'><pre>org.testng.TestNGException: 
-Parameter &apos;val1&apos; is required by @Test on method Sum but has not been marked @Optional or defined
-in C:\Users\choug\AppData\Local\Temp\testng-eclipse-1412170638\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:267)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+</pre></div><a href='#' onClick='toggleBox("stack-trace989447607", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace989447607'><pre>org.testng.TestNGException: 
+Method Sum requires 5 parameters but 2 were supplied in the @Test annotation.
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:444)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:350)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:879)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
@@ -140,7 +138,7 @@ in C:\Users\choug\AppData\Local\Temp\testng-eclipse-1412170638\testng-customsuit
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>parameterization.Example1@29215f06</td></tr>
+<td>parameterization.Example1@6cf0e0ba</td></tr>
 </table><p>
 </body>
 </html>
